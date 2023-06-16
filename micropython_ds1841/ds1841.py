@@ -14,29 +14,25 @@ MicroPython Driver for the DS1841 Potentiometer
 
 """
 
+from time import sleep
 from micropython import const
 from micropython_ds1841.i2c_helpers import CBits, RegisterStruct
-
-try:
-    from typing import Tuple
-except ImportError:
-    pass
 
 
 __version__ = "0.0.0+auto.0"
 __repo__ = "https://github.com/jposada202020/MicroPython_DS1841.git"
 
-_IVR = 0x00
-_CR0 = 0x02
-_CR1 = 0x03
-_LUTAR = 0x08
-_WR = 0x09
-_CR2 = 0x0A
-_TEMP = 0x0C
-_VOLTAGE = 0x0E
-_LUT = 0x80
+_IVR = const(0x00)
+_CR0 = const(0x02)
+_CR1 = const(0x03)
+_LUTAR = const(0x08)
+_WR = const(0x09)
+_CR2 = const(0x0A)
+_TEMP = const(0x0C)
+_VOLTAGE = const(0x0E)
+_LUT = const(0x80)
 
-_VCC_LSB = 25.6
+_VCC_LSB = const(25.6)
 
 
 class DS1841:
