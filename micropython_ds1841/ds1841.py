@@ -60,10 +60,6 @@ class DS1841:
         i2c = I2C(sda=Pin28), scl=Pin(3))
         ds1841 = ds1841.DS1841(i2c)
 
-    Now you have access to the attributes
-
-    .. code-block:: python
-
     """
 
     _lut_address = RegisterStruct(_LUTAR, ">B")
