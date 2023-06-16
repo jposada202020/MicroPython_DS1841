@@ -8,6 +8,10 @@
 
 MicroPython Driver for the DS1841 Potentiometer
 
+All code from
+
+Adapted for Micropython
+
 
 * Author(s): Bryan Siepert, Jose D. Montoya
 
