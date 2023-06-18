@@ -55,13 +55,13 @@ class DS1841:
     .. code-block:: python
 
         from machine import Pin, I2C
-        import ds1841
+        from micropython_ds1841 import ds1841
 
     Once this is done you can define your `machine.I2C` object and define your sensor object
 
     .. code-block:: python
 
-        i2c = I2C(sda=Pin28), scl=Pin(3))
+        i2c = I2C(1, sda=Pin(2), scl=Pin(3))
         ds1841 = ds1841.DS1841(i2c)
 
     """

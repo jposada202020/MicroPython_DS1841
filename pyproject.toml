@@ -42,7 +42,7 @@ classifiers = [
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-py-modules = ["ds1841"]
+packages = ["micropython_ds1841"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
