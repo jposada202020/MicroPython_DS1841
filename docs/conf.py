@@ -32,7 +32,6 @@ except ImportError:
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
-    "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
     "sphinx_immaterial",
 ]
@@ -46,11 +45,9 @@ intersphinx_mapping = {
 
 # autodoc_mock_imports = ["digitalio", "busio"]
 autoclass_content = "both"
-# Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 source_suffix = ".rst"
 master_doc = "index"
-# General information about the project.
 project = "MicroPython ds1841 Library"
 creation_year = "2023"
 current_year = str(datetime.datetime.now().year)
@@ -61,21 +58,10 @@ year_duration = (
 )
 copyright = year_duration + "Jose D. Montoya"
 author = "Jose D. Montoya"
-
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
-# built documents.
-#
-# The short X.Y version.
 version = "1.0"
-# The full version, including alpha/beta/rc tags.
 release = "1.0"
-
 language = "en"
 autoclass_content = "both"
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = [
     "_build",
     "Thumbs.db",
@@ -185,28 +171,14 @@ sphinx_immaterial_custom_admonitions = [
         "override": True,
     },
 ]
-python_type_aliases = {
-    "DigitalInOut": "digitalio.DigitalInOut",
-}
-
 object_description_options = [
     ("py:.*", dict(generate_synopses="first_sentence")),
 ]
 # Set link name generated in the top bar.
 html_title = "MicroPython DS1841"
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
-
-# These paths are either relative to html_static_path
-# or fully qualified paths (eg. https://...)
 html_css_files = ["extra_css.css"]
 
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
 man_pages = [
     (
         master_doc,
@@ -218,10 +190,6 @@ man_pages = [
 ]
 
 # -- Options for Texinfo output -------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
 texinfo_documents = [
     (
         master_doc,
