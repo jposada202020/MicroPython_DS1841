@@ -22,7 +22,6 @@ keywords = [
     "sensor",
     "micropython",
     "ds1841",
-    "micropython",
     "driver",
     "ds1841",
     "potentiometer",

@@ -8,11 +8,6 @@
 
 MicroPython Driver for the DS1841 Potentiometer
 
-All code from
-
-Adapted for Micropython
-
-
 * Author(s): Bryan Siepert, Jose D. Montoya
 
 
@@ -128,7 +123,7 @@ class DS1841:
 
     @property
     def temperature(self) -> int:
-        """The current temperature in degrees celsius"""
+        """The current temperature in Celsius"""
         return self._temperature_register
 
     @property

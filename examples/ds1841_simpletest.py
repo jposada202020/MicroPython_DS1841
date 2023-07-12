@@ -13,30 +13,29 @@ ds1841 = ds1841.DS1841(i2c)
 wiper_output = ADC(Pin(26, mode=Pin.IN))
 
 while True:
-    # set th
     ds1841.wiper = 127
-    print("Wiper set to %d" % ds1841.wiper)
+    print(f"Wiper set to {ds1841.wiper}")
     voltage = wiper_output.read_u16()
     voltage *= 3.3
     voltage /= 65535
-    print("Wiper voltage: %.2f V" % voltage)
+    print(f"Wiper voltage {voltage::.2%}V")
     print("")
     sleep(1.0)
 
     ds1841.wiper = 0
-    print("Wiper set to %d" % ds1841.wiper)
+    print(f"Wiper set to {ds1841.wiper}")
     voltage = wiper_output.read_u16()
     voltage *= 3.3
     voltage /= 65535
-    print("Wiper voltage: %.2f V" % voltage)
+    print(f"Wiper voltage {voltage::.2%}V")
     print("")
     sleep(1.0)
 
     ds1841.wiper = 63
-    print("Wiper set to %d" % ds1841.wiper)
+    print(f"Wiper set to {ds1841.wiper}")
     voltage = wiper_output.read_u16()
     voltage *= 3.3
     voltage /= 65535
-    print("Wiper voltage: %.2f V" % voltage)
+    print(f"Wiper voltage {voltage::.2%}V")
     print("")
     sleep(1.0)
