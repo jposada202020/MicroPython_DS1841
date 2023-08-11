@@ -149,7 +149,7 @@ class DS1841:
     @property
     def lut_selection(self) -> int:
         """Choose the entry in the Look Up Table to use to set the wiper.
-        :param index: The index of the entry to use, from 0-71.
+        :param value: The index of the entry to use, from 0-71.
         """
         if not self._lut_mode_enabled:
             raise RuntimeError(

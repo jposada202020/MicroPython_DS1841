@@ -1,4 +1,4 @@
-MicroPython DS1841 Library
+MicroPython DS1841 Driver
 =========================================
 
 

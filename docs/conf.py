@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 # SPDX-FileCopyrightText: 2023 Jose D. Montoya
 #
 # SPDX-License-Identifier: MIT
@@ -178,26 +176,3 @@ object_description_options = [
 html_title = "MicroPython DS1841"
 html_static_path = ["_static"]
 html_css_files = ["extra_css.css"]
-
-man_pages = [
-    (
-        master_doc,
-        "MicroPython_ds1841_Library",
-        "MicroPython ds1841 Library Documentation",
-        [author],
-        1,
-    ),
-]
-
-# -- Options for Texinfo output -------------------------------------------
-texinfo_documents = [
-    (
-        master_doc,
-        "MicroPython_ds1841_Library",
-        "MicroPython ds1841 Library Documentation",
-        author,
-        "MicroPython_ds1841_Library",
-        "One line description of project.",
-        "Miscellaneous",
-    ),
-]
